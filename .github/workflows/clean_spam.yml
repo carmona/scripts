@@ -2,8 +2,8 @@ name: Clean Outlook Spam (No-TLD)
 
 on:
   schedule:
-    # 8:00 AM GMT-3 corresponds to 11:00 AM UTC (11 - 3 = 8)
-    - cron: '0 11 * * *'
+    # every 4 hours
+    - cron: '0 */4 * * *'
   # Allows triggering the workflow manually from the Actions tab in GitHub
   workflow_dispatch:
 
